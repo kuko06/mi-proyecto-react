@@ -1,38 +1,488 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body{
+    font-family: 'poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+max-width: 1200px;
+margin: 0 auto;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ), url('/public/images/bg3.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.logo{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 800;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu .navbar ul li{
+position: relative;
+float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-weight: 600;
+    }
+
+    .menu .navbar ul li a:hover{
+        color: #c0aa83;
+    }
+
+#menu {
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+}
+
+.header-content {
+text-align: center;
+
+}
+
+.header-content h1{
+    font-size: 75px;
+    line-height: 80px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p{
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+
+.btn-1{
+display: inline-block;
+padding: 11px 35px;
+background-color: #c0aa83;
+color: #000000;
+text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #978566;
+}
+
+.coffe{
+    padding: 100px 0;
+    background-color: #e1e2e6;
+    position: relative;
+}
+
+.cafe-content{
+    text-align: center;
+}
+
+.cafe-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323373;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p{
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.cafe-grupo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.cafe-1{
+    padding: 0 25px;
+}
+
+.cafe-1 img{
+    width: 200px;
+}
+
+.cafe-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cafe-1 h3{
+color: #323337;
+font-size: 20px;
+margin-bottom: 15px;
+
+}
+
+.servicio {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ), url('/public/images/bg2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.servicio-content{
+    text-align: center;
+}
+
+.servicio-content h2 {
+font-size: 55px;
+line-height: 70px;
+color: #f8fafc;
+text-transform: uppercase;
+margin-bottom: 50px;
+
+}
+
+.servicio-content p{
+    font-size: 16px;
+color: #c5c5c5;
+margin-bottom: 50px;
+padding: 0 100px;
+}
+
+.servicio-grupo{
+display: flex;
+justify-content: space-between;
+margin-bottom: 50px;
+}
+
+.servicio-1{
+padding: 0 100px;
+}
+
+.servicio-1 img{
+width: 25px;
+margin-bottom: 15px;
+}
+
+.servicio-1 h3{
+    color: #eaccb3;
+    font-size: 18px;
+}
+
+.general {
+    display: flex;
+}
+
+.general-1{
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #e1e2e6;
+}
+
+.general-2 {
+    background-image: url('/public/images/coffee-3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general-3 {
+    background-image: url('/public/images/coffee-4.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+}
+
+.blog{
+    padding: 100px 0;
+    text-align:  center;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+}
+.blog-1 {
+    padding: 15px 55px;
+}
+
+.blog-content img{
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-1 h3{
+    font-size: 25px;
+    color:#323337;
+
+}
+
+.footer{
+    padding: 100px 0;
+    background-color: #000000;
+
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link ul li a{
+    transition: all .3s ease;
+    font-size: 18px;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.link ul li a:hover{
+    color: #ffffff;
+    padding-left: 6px;
+}
+
+
+.link h3{
+    font-size: 18px;
+    color: #f8fafc;
+    margin-bottom: 15px;
+    border-bottom:2px solid #978566 ;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.link a{
+    font-size: 16px;
+    color: #c5c5c5;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.social-link a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+background-color: rgb(255,255,255, 0.2);
+margin: 0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: all .5s ease;
+}
+
+.social-link a:hover{
+    background-color: #ffffff;
+}
+
+.footer form{
+    text-align: center;
+    
+}
+
+.footer form h3{
+    font-size: 18px;
+    color: #f8fafc;
+    margin-bottom: 15px;
+    border-bottom:2px solid #978566 ;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.input-box{
+    position: relative;
+}
+
+
+.input-box > input{
+width: 100%;
+height: 40px;
+padding: 0 10px;
+outline: none;
+background: rgba(255 255 255 / .1);
+border: 3px solid transparent;
+letter-spacing: 1px;
+transition: .3s;
+color: #fff;
+}
+
+.input-box > textarea{
+    width: 100%;
+    height: 130px;
+    background: rgba(255 255 255 / .1);
+    border: 3px solid transparent;
+    letter-spacing: 1px;
+    transition: .3s;
+    color: #fff;
+    padding: 10px;
+    }
+
+    
+form > button{
+    background-color: #c0aa83;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #000000;
+    padding: 11px 35px;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: #978566;
+}
+
+
+
+@media(max-width:991px) {
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header{
+        min-height: 0vh;
+    }
+.header-content{
+    padding: 100px 30px;
+}
+.header-content p{
+    padding: 0;
+}
+.cafe{
+    padding: 30px;
+}
+.cafe-content h2{
+    padding: 0;
+}
+.txt-p{
+    padding: 0;
+}
+.cafe-grupo{
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.cafe-img{
+    display: none;
+}
+.servicio{
+    padding: 30px;
+}
+.servicio-content p{
+padding: 0;
+}
+
+.servicio-grupo{
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.servicio-1{
+    margin-bottom: 25px;
+}
+.general{
+    flex-direction: column;
+}
+.general-1{
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+.general-2, .general-3{
+    display: none;
+}
+.blog{
+    padding: 30px;
+}
+.blog-content{
+    flex-direction: column;
+}
+.blog-1{
+    padding: 0;
+}
+.footer{
+    padding: 30px;
+}
+.footer-content{
+    flex-direction: column;
+    text-align: center;
+}
+
 }
