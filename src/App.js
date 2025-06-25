@@ -9,7 +9,7 @@ function App() {
           <input type="checkbox" id="menu" />
           <label htmlFor="menu">
             <img
-              src={`${process.env.PUBLIC_URL}/images/menu.png`}
+              src={`/images/menu.png`}
               className="menu-icono"
               alt="icono menu"
             />
@@ -50,7 +50,7 @@ function App() {
       <section className="coffe">
         <img
           className="cafe-img"
-          src={`${process.env.PUBLIC_URL}/images/bg2.png`}
+          src={`/images/bg2.png`}
           alt="Cafe"
         />
 
@@ -66,7 +66,7 @@ function App() {
           <div className="cafe-grupo">
             <div className="cafe-1">
               <img
-                src={`${process.env.PUBLIC_URL}/images/c1.png`}
+                src={`/images/c1.png`}
                 alt="Americano"
               />
               <h3>AMERICANO</h3>
@@ -83,7 +83,7 @@ function App() {
 
             <div className="cafe-1">
               <img
-                src={`${process.env.PUBLIC_URL}/images/c2.png`}
+                src={`/images/c2.png`}
                 alt="Capuchino"
               />
               <h3>CAPUCHINO</h3>
@@ -99,7 +99,7 @@ function App() {
 
             <div className="cafe-1">
               <img
-                src={`${process.env.PUBLIC_URL}/images/c3.png`}
+                src={`/images/c3.png`}
                 alt="Expresso"
               />
               <h3>EXPRESSO</h3>
@@ -125,21 +125,21 @@ function App() {
           <div className="servicio-grupo">
             <div className="servicio-1">
               <img
-                src={`${process.env.PUBLIC_URL}/images/i1.svg`}
+                src={`/images/i1.svg`}
                 alt="Servicio para llevar"
               />
               <h3>Servicio para llevar</h3>
             </div>
             <div className="servicio-1">
               <img
-                src={`${process.env.PUBLIC_URL}/images/i2.svg`}
+                src={`/images/i2.svg`}
                 alt="Servicio en barra"
               />
               <h3>Servicio en barra</h3>
             </div>
             <div className="servicio-1">
               <img
-                src={`${process.env.PUBLIC_URL}/images/i3.svg`}
+                src={`/images/i3.svg`}
                 alt="Servicio a domicilio"
               />
               <h3>Servicio a domicilio</h3>
@@ -205,7 +205,7 @@ function App() {
         <div className="blog-content">
           <div className="blog-1">
             <img
-              src={`${process.env.PUBLIC_URL}/images/blog6.jpg`}
+              src={`/images/blog6.jpg`}
               alt="Cafe calidad"
             />
             <h3>Café de Calidad: Consejos para Nuevos Consumidores</h3>
@@ -219,7 +219,7 @@ function App() {
           </div>
           <div className="blog-1">
             <img
-              src={`${process.env.PUBLIC_URL}/images/blog5.jpg`}
+              src={`/images/blog5.jpg`}
               alt="Cafe exotico"
             />
             <h3>Cafés Exóticos: Sabores Únicos de Orígenes Pocos Conocidos</h3>
@@ -234,7 +234,7 @@ function App() {
           </div>
           <div className="blog-1">
             <img
-              src={`${process.env.PUBLIC_URL}/images/blog4.jpg`}
+              src={`/images/blog4.jpg`}
               alt="Cafe con sal"
             />
             <h3>Café con Sal: Un Toque de Innovación en Tu Taza</h3>
