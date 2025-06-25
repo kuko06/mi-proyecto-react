@@ -1,39 +1,16 @@
 import React from "react";
 import "./App.css";
+import { Navbar } from "./components/layout/Navbar";
+import { Encabezado } from "./components/ui/Encabezado";
 
 function App() {
   return (
     <>
       <header className="header">
-        <div className="menu container">
-          <input type="checkbox" id="menu" />
-          <label htmlFor="menu">
-            <img
-              src={`/images/menu.png`}
-              className="menu-icono"
-              alt="icono menu"
-            />
-          </label>
-          <nav className="navbar">
-            <ul>
-              <li>
-                <a href="#">inicio</a>
-              </li>
-              <li>
-                <a href="#">servicio</a>
-              </li>
-              <li>
-                <a href="#">producto</a>
-              </li>
-              <li>
-                <a href="#">contacto</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
+        <Navbar/>
         <div className="header-content container">
-          <h1>Cafe de autor</h1>
+      
+          <Encabezado  tituloPrincipal={"Cafe de autor"}/>
           <p>
             Se refiere a un café que se caracteriza por su alta calidad, sabor
             excepcional y perfil de sabor único. Este tipo de café se obtiene
