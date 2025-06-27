@@ -3,7 +3,7 @@ import "./App.css";
 import { Navbar } from "./components/layout/Navbar";
 import { Encabezado } from "./components/ui/Encabezado";
 import { LikeButton } from "./components/ui/LikeButton";
-
+import { FormContacto } from "./components/ui/FormContacto";
 
 function App() {
   return (
@@ -254,25 +254,7 @@ function App() {
             </ul>
           </div>
 
-          <form>
-            <h3>CONTACTO</h3>
-            <div className="input-box">
-              <input type="text" required placeholder="Nombre y apellido" />
-              <i className="fa-solid fa-user"></i>
-            </div>
-            <div className="input-box">
-              <input type="email" required placeholder="Correo electronico" />
-              <i className="fa-solid fa-envelope"></i>
-            </div>
-            <div className="input-box">
-              <input type="text" required placeholder="Asunto" />
-              <i className="fa-solid fa-pen-to-square"></i>
-            </div>
-            <div className="input-box">
-              <textarea cols="40" rows="10" placeholder="Escribe tu mensaje" />
-            </div>
-            <button type="submit">Enviar mensaje</button>
-          </form>
+          <FormContacto />
 
           <div className="link">
             <h3>SEGUINOS</h3>
