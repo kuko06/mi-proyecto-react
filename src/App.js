@@ -2,6 +2,8 @@ import React from "react";
 import "./App.css";
 import { Navbar } from "./components/layout/Navbar";
 import { Encabezado } from "./components/ui/Encabezado";
+import { LikeButton } from "./components/ui/LikeButton";
+
 
 function App() {
   return (
@@ -193,6 +195,7 @@ function App() {
               te ayudarán a reconocer un buen café y, por qué no, a disfrutar aún
               más de tu experiencia cafetera.
             </p>
+            <LikeButton />
           </div>
           <div className="blog-1">
             <img
@@ -208,6 +211,7 @@ function App() {
               desafían nuestras percepciones tradicionales del café y nos invitan
               a explorar nuevas dimensiones de sabor.
             </p>
+            <LikeButton />
           </div>
           <div className="blog-1">
             <img
@@ -221,6 +225,7 @@ function App() {
               popularidad mundialmente, ofreciendo una experiencia única al
               paladar que despierta curiosidad y placer en igual medida.
             </p>
+            <LikeButton />
           </div>
         </div>
 
