@@ -5,11 +5,12 @@ import { Encabezado } from "./components/ui/Encabezado";
 import { LikeButton } from "./components/ui/LikeButton";
 import { FormContacto } from "./components/ui/FormContacto";
 import { CafeSection } from "./components/ui/CafeSection";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <>
-      <header className="header">
+      <header className="header" id="inicio">
         <Navbar/>
         <div className="header-content container">
       
@@ -29,7 +30,7 @@ function App() {
 
       <CafeSection />
 
-      <main className="servicio">
+      <main className="servicio" id="servicio">
         <div className="servicio-content container">
           <h2>Servicio de cafeteria</h2>
           <div className="servicio-grupo">
@@ -74,7 +75,7 @@ function App() {
         </div>
       </main>
 
-      <section className="general">
+      <section className="general" id="producto">
         <div className="general-1">
           <h2>Molienda</h2>
           <p>
@@ -165,7 +166,7 @@ function App() {
         </a>
       </section>
 
-      <footer className="footer">
+      <footer className="footer" id="contacto">
         <div className="footer-content container">
           <div className="link">
             <h3>NOSOTROS</h3>
